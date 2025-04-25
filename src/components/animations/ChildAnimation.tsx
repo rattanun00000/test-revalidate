@@ -6,7 +6,7 @@ interface ChildAnimationProps {
     children: React.ReactNode;
     direction?: 'up' | 'right' | 'left' | 'down' | 'none';
     distance?: number;
-    custom?: any;
+    custom?: string;
     className?: string;
   }
   

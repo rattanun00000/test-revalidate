@@ -1,3 +1,9 @@
+interface user {
+  id: string
+  name: string
+  email: string
+}
+
 export default async function Home() {
   const data = await fetch('http://localhost:3000/users', {
     cache: 'force-cache', next: { tags: ['data-tag'] }, // กำหนด tag ชื่อ 'data-tag'
@@ -6,11 +12,11 @@ export default async function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-      <ul>
-      {users.map((user:any) => (
-        <li key={user.id}>{user.name}</li>
-      ))}
-    </ul>
+        <ul>
+          {users.map((user: user) => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
       </main>
     </div>
   );
