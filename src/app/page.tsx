@@ -5,7 +5,7 @@ interface user {
 }
 
 export default async function Home() {
-  const data = await fetch('http://localhost:3000/users', {
+  const data = await fetch('https://test-next-revalidatetag.vercel.app/users', {
     cache: 'force-cache', next: { tags: ['data-tag'] }, // กำหนด tag ชื่อ 'data-tag'
   })
   const users = await data.json()
