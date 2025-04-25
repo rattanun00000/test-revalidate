@@ -1,6 +1,6 @@
 "use client"
-import React, { useEffect, useRef } from 'react';
-import { motion, useInView, Variant } from 'framer-motion';
+import React from 'react';
+import { motion, Variant } from 'framer-motion';
 
 interface ChildAnimationProps {
     children: React.ReactNode;

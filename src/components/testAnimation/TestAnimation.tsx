@@ -16,7 +16,7 @@ const TestAnimation = () => {
       className="px-6 py-3 bg-indigo-600 text-white rounded-lg"
     >
       กดหรือ Hover ที่นี่
-    </motion.button>>
+    </motion.button>
   </div>
   )
 }

@@ -1,8 +1,3 @@
-import { Animation, ChildAnimation, ParentAnimation } from "@/components/animations";
-import { GlassmorphismCard } from "@/components/testAnimation/GlassmorphismCard";
-import TestAnimation from "@/components/testAnimation/TestAnimation";
-import Image from "next/image";
-
 export default async function Home() {
   const data = await fetch('http://localhost:3000/users', {
     cache: 'force-cache', next: { tags: ['data-tag'] }, // กำหนด tag ชื่อ 'data-tag'

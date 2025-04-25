@@ -1,6 +1,6 @@
 "use client"
-import React, { useEffect, useRef } from 'react';
-import { motion, useInView, Variant } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 // Unified animation component that can handle different directions
 interface AnimationProps {
